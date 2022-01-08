@@ -1,0 +1,141 @@
+{% extends "headerfooter.html" %}
+{% load static %}
+{% block mainblock %}
+<style>
+    *{
+		font-family:poppins;
+		box-sizing:border-box;
+	}
+</style>
+
+<div class="maindiv1">
+	<div class="row text-light m-0 text-center" style="padding:120px 0;">
+		<h1 class="text-center w-100">CLASSES</h1>
+		<p class="w-100 text-center">
+			<a class="text-light" style="text-decoration:none;" href="index.html"><i class="fa fa-home"></i> Home</a> >Class
+		</P>
+	</div>
+</div>
+
+<div class="container my-5 sandyclassetion"><!-- get class form by sandy -->
+    <div class="row">
+        <div class="col-md-8 p-5">
+            <div class="w-100 text-center">
+                <h2 style="font-weight: bold;">REGISTER NOW</h2>
+                <p style="color: #6b6b6b;">The First 7 Day Trial Is Completely Free With The Teacher</p>
+
+                <form action="" method="">
+					<div class=" row">
+						<div class="col-md-6">
+							<div class="sdfullrow text-left">
+                                <p style="color: #afaeae;margin-bottom: 3px;">First Name</p>
+								<input type="text" name="" id="" class="input100" required>
+                            </div>
+                            <div class="sdfullrow text-left">
+                                <p style="color: #afaeae;margin-bottom: 3px;">Last Name</p>
+								<input type="text" name="" id="" class="input100">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="sdfullrow text-left">
+                                <p style="color: #afaeae;margin-bottom: 3px;">Your email address</p>
+								<input type="email" name="" id="" class="input100">
+                            </div>
+                            <div class="sdfullrow text-left">
+                                <p style="color: #afaeae;margin-bottom: 3px;">Mobile No*</p>
+								<input type="number" name="" id="" class="input100" required>
+							</div>
+						</div>
+					</div>
+					<div class="sdfullrow">
+						<input type="submit" value="SEND MESSAGE" name=""  class="sandysendbtn w-100">
+					</div>
+				</form>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'images/register-pic.jpg' %}" style="height: 100%;width: 100%;" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<div class="container p-0 py-5 my-5"><!-- unlimited class section by sandy-->
+    <div class="row m-0 p-0">
+        <div class="col-md-12 m-0 p-0 text-center">
+            <h2 style="font-weight: bold;">REGISTER NOW</h2>
+        </div>
+    </div>
+    <div class="row"><!-- class names with trainer image and names-->
+        <div class="col-md-4 my-3">
+            <div class="sandysingleclassitem">
+                <div class="sandyclassesname">
+                    <h5 class="text-light m-0" ><strong>Yoga</strong></h5>
+                    <p class="m-0"><a href="#" class="text-light" style="text-decoration: none;"><i class="fa fa-user sandy_i_design2"></i><span>Randy Rivera</span></i></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="sandysingleclassitem">
+                <div class="sandyclassesname">
+                    <h5 class="text-light m-0" ><strong>Karate </strong></h5>
+                    <p class="m-0"><a href="#" class="text-light" style="text-decoration: none;"><i class="fa fa-user sandy_i_design2"></i><span>Randy Rivera</span></i></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="sandysingleclassitem">
+                <div class="sandyclassesname">
+                    <h5 class="text-light m-0" ><strong>Running</strong></h5>
+                    <p class="m-0"><a href="#" class="text-light" style="text-decoration: none;"><i class="fa fa-user sandy_i_design2"></i><span>Randy Rivera</span></i></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="sandysingleclassitem">
+                <div class="sandyclassesname">
+                    <h5 class="text-light m-0" ><strong>Dance</strong></h5>
+                    <p class="m-0"><a href="#" class="text-light" style="text-decoration: none;"><i class="fa fa-user sandy_i_design2"></i><span>Randy Rivera</span></i></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="sandysingleclassitem">
+                <div class="sandyclassesname">
+                    <h5 class="text-light m-0" ><strong>Personal Training</strong></h5>
+                    <p class="m-0"><a href="#" class="text-light" style="text-decoration: none;"><i class="fa fa-user sandy_i_design2"></i><span>Randy Rivera</span></i></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="sandysingleclassitem">
+                <div class="sandyclassesname">
+                    <h5 class="text-light m-0" ><strong>Weight Loss</strong></h5>
+                    <p class="m-0"><a href="#" class="text-light" style="text-decoration: none;"><i class="fa fa-user sandy_i_design2"></i><span>Randy Rivera</span></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row m-0 p-0"><!-- classes page last section by sandy -->
+    <div class="col-md-6 p-5 sandy_ftr_bnr1">
+        <span>New member</span>
+        <h2>7 days for free</h2>
+        <p>Complete the training sessions with us, surely you will be happy</p>
+        <a href="#" class="sandy_primary-btn">Get Started</a>
+    </div>
+    <div class="col-md-6 p-5 sandy_ftr_bnr2">
+        <span>CONTACT US</span>
+        <h2>09 746 204</h2>
+        <p>If you trust us on your journey they dark sex does not disappoint you!</p>
+        <a href="#" class="sandy_primary-btn">Get Started</a>
+    </div>
+</div>
+<!-- jquery by sandy-->
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+	   $("title").html("Classes | BeFit");
+   });
+</script>
+{% endblock %}

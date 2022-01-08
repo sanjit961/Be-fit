@@ -1,0 +1,145 @@
+{% extends "headerfooter.html" %}
+{% load static %}
+{% block mainblock %}
+<style>
+    *{
+		font-family:poppins;
+		box-sizing:border-box;
+	}
+</style>
+<!-- done by sandip das (www.wpdevkit.in) -->
+    <div class="maindiv1">
+			
+			<div class="row text-light m-0 text-center" style="padding:180px 0;">
+				<h1 class="text-center w-100">ABOUT</h1>
+				<p class="w-100 text-center">
+					<a class="text-light" style="text-decoration:none;" href="index.html"><i class="fa fa-home"></i> Home</a> > About
+				</P>
+			</div>
+	</div>
+			<!-- story about us section by sandy starts --> <!-- about us section 1 -->
+			<div class="row m-0 px-5" style="padding: 80px 0;color:#000;">
+				<div class="col-md-6 m-0 p-0" style="position:relative;">
+                    <img src="{% static 'images/about-pic.jpg' %}" style="height:100%; width:100%;">
+					<img data-toggle="modal" data-target="#sandyModalCenter" src="{% static 'images/play.jpg' %}" style="display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);cursor:pointer;">
+				</div>
+				<div class="col-md-6 m-0">
+					<h1 class="sandy_story_abtus pt-3">STORY ABOUT US</h1>
+					<p class="text-secondary">Every now and again someone comments on my weight. Usually in a kind way, mostly to say something along the lines of “How can you make and eat so much food and stay so thin?” It’s always a little weird to hear someone else’s thoughts on your weight. It’s even harder to talk about body image. Most of us probably think about it, but to actually say anything about what we do or how we feel is hard. I’ve debated a lot about if I wanted to share my story or not. It’s a scary thing. The subject makes me feel a little self-conscious. And the last thing I would ever want is to make someone else feel self-conscious. But I am super proud of my journey over the last two years. It’s my story to tell, and I’d like to share it with you.
+
+                    </p>
+					<img src="{% static 'images/about-signature.jpg' %}">
+					<h5 class="pt-4" style="font-weight:bold">Lettie Chavez</h5>
+					<p class="m-0 p-0" style="font-size:13px;color:#F26240;">CEO - Founder</p>
+				</div>
+			</div>
+			
+			<!-- about us section 2 -->
+			<div class="row mx-5 p-0 py-4 mb-5"  style="color:#000;background:linear-gradient(to right,#eb3c5a,#f67831)">
+				<div class="col-md-3 text-center">
+					<h1 class="sandy_counter_num">98</h1>
+					<p class="sandy_counter_num_p">Programs</p>
+				</div>
+				<div class="col-md-3 text-center">
+					<h1 class="sandy_counter_num">14</h1>
+					<p class="sandy_counter_num_p">LOCATIONS</p>
+				</div>
+				<div class="col-md-3 text-center">
+					<h1 class="sandy_counter_num">50k+</h1>
+					<p class="sandy_counter_num_p">MEMBERS</p>
+				</div> 
+				<div class="col-md-3 text-center">
+					<h1 class="sandy_counter_num">34</h1>
+					<p class="sandy_counter_num_p">COACHES</p>
+				</div> 
+			</div>
+			<div class="row m-0 p-5 sandy_banner_section"><!--  section 4 (banner) starts -->
+				<div class="col-sm-6">
+					<div class="sandy_banner_text">
+						<h2>Get training today</h2>
+						<p>BE-FIT Institute -India's first International Fitness Institute with courses in Fitness Management, Personal Training and Spinning Instructing.</p>
+						<a href="#" class="sandy_primary-btn">Contact Now</a>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<img src="{% static 'images/banner-person.png' %}" alt="" class="img-fluid" style=" padding-top:20px;">
+				</div>
+			</div>
+			
+			<div class="row m-0 py-5 px-4 sandy_trainer_section"><!--  section 5 (trainer) starts -->
+				<div class="sandy_trainer_st col-md-12">
+					<h2>EXPERT TRAINERS</h2>
+				</div>
+				<div class="col-md-6 col-lg-4 p-0 px-3">
+					<div class="sandy_single_tainer">
+					<img src="{% static 'images/about-trainer-1.jpg' %}" class="img-fluid" style="width:100%;" alt="">
+					<div class="trainer_text">
+						<h5>Patrick Cortez</h5>
+						<span>Leader</span>
+						<p>A healthy and disciplined leader inspires his team members to be healthy and be more energetic. This increases the overall productivity of the team as they are more likely to be disciplined and fall sick less often.</p>
+						<div class="trainer_social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4  p-0 px-3">
+					<div class="sandy_single_tainer">
+					<img src="{% static 'images/about-trainer-2.jpg' %}" class="img-fluid" style="width:100%;" alt="">
+					<div class="trainer_text">
+						<h5>Gregory Powers</h5>
+						<span>Gym coach</span>
+						<p>Gym Coach is like having a Personal workout trainer and fitness trainer in your pocket. You'll quickly improve fitness, strength, tone, muscle or use it to count the calories you burn as part of your weight loss / weight gain program.</p>
+						<div class="trainer_social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 p-0 px-3">
+					<div class="sandy_single_tainer">
+					<img src="{% static 'images/about-trainer-3.jpg' %}" class="img-fluid" style="width:100%;" alt="">
+					<div class="trainer_text">
+						<h5>Walter Wagner</h5>
+						<span>Dance trainer</span>
+						<p>Dance Fitness incorporates aerobic moves with hip-hop and other dance style moves for a fast and fun cardio workout. ... A Dance Fitness Instructor must keep the class moving and motivated by providing easy instruction so that the clients can follow your lead.</p>
+						<div class="trainer_social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+						</div>
+					</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row m-0 p-0"><!-- about us section 6 -->
+				<div class="col-md-6 p-5 sandy_ftr_bnr1">
+					<span>New member</span>
+					<h2>7 days for free</h2>
+					<p>Complete the training sessions with us, surely you will be happy</p>
+					<a href="#" class="sandy_primary-btn">Get Started</a>
+				</div>
+				<div class="col-md-6 p-5 sandy_ftr_bnr2">
+					<span>CONTACT US</span>
+					<h2>09 746 204</h2>
+					<p>If you trust us on your journey they dark sex does not disappoint you!</p>
+					<a href="#" class="sandy_primary-btn">Get Started</a>
+				</div>
+			</div>
+			<!-- story about us section by sandy ends -->
+<!-- jquery by sandy-->
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+	   $("title").html("About Us | BeFit");
+   });
+</script>
+
+{% endblock %}

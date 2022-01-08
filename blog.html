@@ -1,0 +1,107 @@
+{% extends "headerfooter.html" %}
+{% load static %}
+{% block mainblock %}
+<style>
+    *{
+		font-family:poppins;
+		box-sizing:border-box;
+    }
+    a:hover{
+        text-decoration: none;
+        color:#000;
+    }
+</style>
+<div class="maindiv1">
+	<div class="row text-light m-0 text-center" style="padding:120px 0;">
+		<h1 class="text-center w-100">BLOG</h1>
+		<p class="w-100 text-center">
+			<a class="text-light" style="text-decoration:none;" href="index.html"><i class="fa fa-home"></i> Home</a> > Blog
+		</P>
+	</div>
+</div>
+<div class="container  my-3 py-5"> <!-- sandy blogs posts show -->
+    <div class="row m-0 p-0 py-3">
+        <div class="col-md-4 my-3">
+            <div class="sandysinglepost">
+                <div class="sandyblogpostimg">
+                    <img src="{% static 'images/blog-1.jpg' %}" class="img-fluid">
+                </div>
+                <div class="sandyblogwidget">
+                    <span class="text-secondary">February 17, 2019</span>&nbsp;&nbsp;
+                    <span><a href="#" class="sandybloghasg">#ACE</a></span>
+                    <h4 class="mt-2"><a href="#" class="sandyblogpostlink">Known formally as the American Council on Exercise, the ACE is a nonprofit organization that certifies exercise professionals as well as health coaches.</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="sandysinglepost">
+                <div class="sandyblogpostimg">
+                    <img src="{% static 'images/blog-2.jpg' %}" class="img-fluid">
+                </div>
+                <div class="sandyblogwidget">
+                    <span class="text-secondary">February 17, 2019</span>&nbsp;&nbsp;
+                    <span><a href="#" class="sandybloghasg">#Born_Fitness</a></span>
+                    <h4 class="mt-2"><a href="#" class="sandyblogpostlink">Born Fitness was developed as a program designed to make taking care of yourself easier and stress-free
+                    </a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="sandysinglepost">
+                <div class="sandyblogpostimg">
+                    <img src="{% static 'images/blog-3.jpg' %}" class="img-fluid">
+                </div>
+                <div class="sandyblogwidget">
+                    <span class="text-secondary">February 17, 2019</span>&nbsp;&nbsp;
+                    <span><a href="#" class="sandybloghasg">#Gym</a></span>
+                    <h4 class="mt-2"><a href="#" class="sandyblogpostlink">If you've ever felt out of place in a gym or just in life, this is the blog for you.</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="sandysinglepost">
+                <div class="sandyblogpostimg">
+                    <img src="{% static 'images/classes4.jpg' %}" class="img-fluid">
+                </div>
+                <div class="sandyblogwidget">
+                    <span class="text-secondary">February 17, 2019</span>&nbsp;&nbsp;
+                    <span><a href="#" class="sandybloghasg">#Workout_Nirwana</a></span>
+                    <h4 class="mt-2"><a href="#" class="sandyblogpostlink">Workout Nirvana offers excellent information on how to improve your fitness journey and keep pushing your goals</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="sandysinglepost">
+                <div class="sandyblogpostimg">
+                    <img src="{% static 'images/classes5.jpg' %}" class="img-fluid">
+                </div>
+                <div class="sandyblogwidget">
+                    <span class="text-secondary">February 17, 2019</span>&nbsp;&nbsp;
+                    <span><a href="#" class="sandybloghasg">#Nerd_Fitness</a></span>
+                    <h4 class="mt-2"><a href="#" class="sandyblogpostlink">Nerd Fitness is a community of "outcasts" and "misfits" ready to help you get into shape.</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="sandysinglepost">
+                <div class="sandyblogpostimg">
+                    <img src="{% static 'images/classes1.jpg' %}" class="img-fluid">
+                </div>
+                <div class="sandyblogwidget">
+                    <span class="text-secondary">February 17, 2019</span>&nbsp;&nbsp;
+                    <span><a href="#" class="sandybloghasg">#Simply_Shredded</a></span>
+                    <h4 class="mt-2"><a href="#" class="sandyblogpostlink">A great blog for men and women looking to lose fat, gain muscle and sculpt their bodies into their ideal shapes.</a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jquery by sandy-->
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+	   $("title").html("Blogs | BeFit");
+   });
+</script>
+{% endblock %}

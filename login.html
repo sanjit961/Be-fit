@@ -1,0 +1,59 @@
+{% extends "headerfooter.html" %}
+{% load static %}
+{% block mainblock %}
+<style>
+    *{
+		font-family:poppins;
+		box-sizing:border-box;
+	}
+</style>
+
+<div class="cotainer">
+	<div class="sandyloginpage">
+		<div class="sandyloginsec text-light">
+			<div class="row m-0 p-0">
+				<div class="col-md-6 m-0 p-0 sanddyloginimg">
+					<p class="sandysignuplink">
+						<a href="{% url 'signup' %}">Create an account</a>
+					</p>
+				</div>
+				<div class="col-md-6 m-0 p-0">
+					<h3>Sign In</h3>
+					<form action="" method="POST">
+						{% csrf_token %}
+						<div class="sdfullrow">
+							<input type="text" name="lgnEmail" id="" placeholder="Your Username" class="sandyloginput" required>
+						</div>
+						<div class="sdfullrow">
+							<input type="password" name="lgnPass" id="" placeholder="Password" class="sandyloginput" required>
+						</div>
+						<div class="sdfullrow">
+							<button class="btn btn-primary" name="lgnSub"> Login </button>
+						</div>
+						<div class="sdfullrow">
+							<p class="sandysignuplink1">
+								Don't have an acoount? <a href="{% url 'signup' %}">Create now</a>
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% if error %}
+
+<script type="text/javascript">
+	alert("{{error}}");
+</script>
+
+{% endif %}
+
+<!-- jquery by sandy-->
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+	   $("title").html("Login | BeFit");
+   });
+</script>
+{% endblock %}

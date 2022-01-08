@@ -1,0 +1,428 @@
+{% extends "headerfooter.html" %}
+{% load static %}
+{% block mainblock %}
+<style>
+    *{
+		font-family:poppins;
+		box-sizing:border-box;
+    }
+    a:hover{
+        text-decoration: none;
+        color:#000;
+    }
+</style>
+<div class="maindiv1" style="padding:120px 0;">
+	<div class="container mt-5 pt-5"> <!-- bmi section  by sandy-->
+        <div class="col-md-7 pt-5 mt-5">
+            <p class="sandyhomeptext">FITNESS ELEMENTS</p>
+            <h1 class="sandyhomeph1">BMI CALCULATOR</h1>
+            <p class="sandyhmep2">BeFit comes packed with the user-friendly BMI Calculator</p>
+            <a href="#" class="sandy_primary-btn">Read More</a>
+        </div>
+    </div>
+</div>
+
+<!-- story about us section by sandy  -->
+<div class="row m-0 px-5" style="padding: 80px 0;color:#000;">
+	<div class="col-md-6 m-0 p-0" style="position:relative;">
+        <img src="{% static 'images/about-pic.jpg' %}" style="height:100%; width:100%;">
+		<img data-toggle="modal" data-target="#sandyModalCenter" src="{% static 'images/play.jpg' %}" style="display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);cursor:pointer;">
+	</div>
+	<div class="col-md-6 m-0">
+		<h1 class="sandy_story_abtus pt-3">STORY ABOUT US</h1>
+		<p class="text-secondary">Every now and again someone comments on my weight. Usually in a kind way, mostly to say something along the lines of “How can you make and eat so much food and stay so thin?” It’s always a little weird to hear someone else’s thoughts on your weight. It’s even harder to talk about body image. Most of us probably think about it, but to actually say anything about what we do or how we feel is hard. I’ve debated a lot about if I wanted to share my story or not. It’s a scary thing. The subject makes me feel a little self-conscious. And the last thing I would ever want is to make someone else feel self-conscious. But I am super proud of my journey over the last two years. It’s my story to tell, and I’d like to share it with you.
+        </p>
+        <a href="#" class="sandy_primary-btn">Read More</a>
+	</div>
+</div>
+
+<div class="row m-0 p-0"> <!-- workout section by sandy and rishav -->
+    <div class="col-md-6 m-0 p-0 sandy3rdsbg">
+       <!-- blank space with bg img -->
+    </div>
+    <div class="col-md-6 m-0 p-0"> <!-- designn by rishav -->
+        <div class="row m-0 p-0">
+            <div class="col-md-6 m-0 p-5 bg-dark text-light">
+                <div class="row m-0 p-0  my-3">
+                    <div class="w-100" style="height: 60px;"><img src="{% static 'images//home/icon1.jpg' %}"></div>
+                    <h3>Strategies</h3>
+                    <p>A healthy body can prevent conditions such as heart disease and diabetes, and help you maintain independence as you age. Mental fitness is just as important as physical fitness, and shouldn't be neglected. ... It refers to a series of exercises that help you: slow down.</p>
+                </div>
+                <div class="row m-0 p-0 my-3">
+                    <div class="w-100" style="height: 60px;"><img src="{% static 'images//home/icon2.jpg' %}"></div>
+                    <h3>Workout</h3>
+                    <p>Endurance, or aerobic, activities increase your breathing and heart rate. They keep your heart, lungs, and circulatory system healthy and improve your overall fitness. Examples include brisk walking, jogging, swimming, and biking. Strength, or resistance training, exercises make your muscles stronger.</p>
+                </div>
+            </div>
+            <div class="col-md-6 m-0 p-5 text-light" style="background: #000;">
+                <div class="row m-0 p-0  my-3">
+                    <div class="w-100" style="height: 60px;"><img src="{% static 'images//home/icon3.jpg' %}"></div>
+                    <h3>Yoga</h3>
+                    <p>The Benefits of Yoga for Physical Fitness. All forms of exercise are important for the body. ... Yoga is about creating balance, strength, flexibility and relaxation in the body through a series of postures, movements and breathing patterns.</p>
+                </div>
+                <div class="row m-0 p-0  my-3">
+                    <div class="w-100" style="height: 60px;"><img src="{% static 'images//home/icon4.jpg' %}"></div>
+                    <h3>Weight Loss</h3>
+                    <p>Some great choices for burning calories include walking, jogging, running, cycling, swimming, weight training, interval training, yoga, and Pilates. That said, many other exercises can also help boost your weight loss efforts. It's most important to choose an exercise that you enjoy doing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row m-0 py-5 px-4 sandy_trainer_section"><!--  exoerts trainer by sandy -->
+    <div class="sandy_trainer_st col-md-12">
+        <h2>EXPERT TRAINERS</h2>
+    </div>
+    <div class="col-md-6 col-lg-4 p-0 px-3">
+        <div class="sandy_single_tainer">
+        <img src="{% static 'images/about-trainer-1.jpg' %}" class="img-fluid" style="width:100%;" alt="">
+        <div class="trainer_text">
+            <h5>Patrick Cortez</h5>
+            <span>Leader</span>
+            <p>A healthy and disciplined leader inspires his team members to be healthy and be more energetic. This increases the overall productivity of the team as they are more likely to be disciplined and fall sick less often.</p>
+            <div class="trainer_social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4  p-0 px-3">
+        <div class="sandy_single_tainer">
+        <img src="{% static 'images/about-trainer-2.jpg' %}" class="img-fluid" style="width:100%;" alt="">
+        <div class="trainer_text">
+            <h5>Gregory Powers</h5>
+            <span>Gym coach</span>
+            <p>Gym Coach is like having a Personal workout trainer and fitness trainer in your pocket. You'll quickly improve fitness, strength, tone, muscle or use it to count the calories you burn as part of your weight loss / weight gain program.</p>
+            <div class="trainer_social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4 p-0 px-3">
+        <div class="sandy_single_tainer">
+        <img src="{% static 'images/about-trainer-3.jpg' %}" class="img-fluid" style="width:100%;" alt="">
+        <div class="trainer_text">
+            <h5>Walter Wagner</h5>
+            <span>Dance trainer</span>
+            <p>Dance Fitness incorporates aerobic moves with hip-hop and other dance style moves for a fast and fun cardio workout. ... A Dance Fitness Instructor must keep the class moving and motivated by providing easy instruction so that the clients can follow your lead.</p>
+            <div class="trainer_social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+        </div>
+        </div>
+    </div> 
+</div>
+
+<div class="container py-5 sandytestimonialbg"> <!-- success stories by sandy -->
+    <div class="row m-0 p-0">
+        <div class="sandy_trainer_st col-md-12">
+            <h2>SUCCESS STORIES</h2>
+        </div>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide sandycustomcarousel" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+                <p class="px-4 text-center sandymypcaro ">
+                    Jenna Dunham Dropped 70 Pounds Post-Pregnancy Jenna felt discouraged, but relied on a personal mantra to get back into the gym. "I can do anything for one minute," she told herself before stepping on the treadmill or walking over to the weights area. Soon, she was up to sprints and advanced strength-training circuits.
+
+
+                </p>
+                <div class=" row mt-5 p-0 sandytestimonialimg">
+                    <div class="col-6 col-md-3 p-0 mx-auto">
+                         <div class="sandytestimonaialimgs text-center">
+                            <img src="{% static 'images/home/testimonial-1.jpg' %}" alt="" class="sandytextimimg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 p-0 text-center">
+                    <h5 class="w-100 text-center m-0" style="color:#000;">Patrick Cortez</h5>
+                    <p class="w-100 text-center" style="color: #f15d44;">Leader</p>
+                </div>
+          </div>
+          <div class="carousel-item ">
+                <p class="px-4 text-center sandymypcaro"> Nerd Fitness rebels come in all shapes and sizes and from all walks of life. They also come in every type of “nerd” possible: book nerds, video game nerds, cosplay nerds, even Bible nerds!  Today, I want to introduce you to Ryan. He is pictured above in his “before” phase, and is studying to become a Catholic priest!  Ryan spent the past two years struggling to find a path to a healthy lifestyle that worked for him.  Somehow, that path lead him to Nerd Fitness and the our community, and an overall weight loss of 115 pounds (and counting!).
+                </p>
+                <div class=" row mt-5 p-0 sandytestimonialimg">
+                    <div class="col-6 col-md-3 p-0 mx-auto">
+                        <div class="sandytestimonaialimgs text-center">
+                            <img src="{% static 'images/home/testimonial-1.jpg' %}" alt="" class="sandytextimimg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 p-0 text-center">
+                    <h5 class="w-100 text-center m-0" style="color:#000;">Patrick Cortez</h5>
+                    <p class="w-100 text-center" style="color: #f15d44;">Leader</p>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <p class="px-4 text-center sandymypcaro">Marcia has officially lost 200 lbs. in one year. But the transition wasn’t quick and easy. Her son’s wedding was what inspired the dramatic lifestyle change. “Their wedding day was beautiful and a few weeks later, we saw the beautiful photos from the photographer. All was fine until I was faced with a picture of my son and I dancing the mother/son dance together. I was in total disgust as I looked at myself in the pictures. Who was this person? Had I really gotten that big?”
+
+
+                </p>
+                <div class=" row mt-5 p-0 sandytestimonialimg">
+                    <div class="col-6 col-md-3 p-0 mx-auto">
+                        <div class="sandytestimonaialimgs text-center">
+                            <img src="{% static 'images/home/testimonial-1.jpg' %}" alt="" class="sandytextimimg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 p-0 text-center">
+                    <h5 class="w-100 text-center m-0" style="color:#000;">Patrick Cortez</h5>
+                    <p class="w-100 text-center" style="color: #f15d44;">Leader</p>
+                </div>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="row m-0 p-5 sandy_banner_section"><!--  get training today by sandy -->
+    <div class="col-sm-6">
+        <div class="sandy_banner_text">
+            <h2>Get training today</h2>
+            <p>BE-FIT Institute -India's first International Fitness Institute with courses in Fitness Management, Personal Training and Spinning Instructing.</p>
+            <a href="#" class="sandy_primary-btn">Contact Now</a>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <img src="{% static 'images/banner-person.png' %}" alt="" class="img-fluid" style=" padding-top:20px;">
+    </div>
+</div>
+
+<div class="container p-0 py-5"><!--membership price by sandy and rishav -->
+    <div class="row m-0 p-0">
+        <div class="sandy_trainer_st col-md-12">
+            <h2>MEMBERSHIP PLANS</h2>
+        </div>
+        <div class="col-md-4 my-3 px-3">
+            <div class="sandysingleprice">
+                <div class="sandypricetitle">
+                    <h4>Basic</h4>
+                </div>
+                <div class="sandypricepmon">
+                    <span class="sandyrupee">&#8377;899</span>
+                    <span class="text-secondary">/Month</span>
+                </div>
+                <ul class="sandymembershipdetails">
+                    <li class="sandymdli">
+                        <p class="text-secondary">Duration</p>
+                        <p><strong>12 months</strong></p>
+                    </li>
+                    <li class="sandymdli">
+                        <p class="text-secondary">Personal trainer</p>
+                        <p><strong>00 person</strong></p>
+                    </li>
+                    <li class="sandymdli">
+                        <p class="text-secondary">Amount of people </p>
+                        <p><strong>01 person</strong></p>
+                    </li>
+                    <li class="sandymdli">
+                        <p class="text-secondary">Number of visits</p>
+                        <p><strong>Unlimited</strong></p>
+                    </li>
+                </ul>
+                <div class="sandymemberbyubtn">
+                    <a href="#" ><div class="sandybuylink">Start Now</div> </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3 px-3">
+            <div class="sandysingleprice">
+                <div class="sandypricetitle">
+                    <h4>STANDARD</h4>
+                </div>
+                <div class="sandypricepmon">
+                    <span class="sandyrupee">&#8377;1499</span>
+                    <span class="text-secondary">/Month</span>
+                </div>
+                <ul class="sandymembershipdetails">
+                    <li class="sandymdli">
+                        <p class="text-secondary">Duration</p>
+                        <p><strong>12 months</strong></p>
+                    </li>
+                    <li class="sandymdli">
+                        <p class="text-secondary">Personal trainer</p>
+                        <p><strong>01 person</strong></p>
+                    </li>
+                    <li class="sandymdli">
+                        <p class="text-secondary">Amount of people </p>
+                        <p><strong>01 person</strong></p>
+                    </li>
+                    <li class="sandymdli">
+                        <p class="text-secondary">Number of visits</p>
+                        <p><strong>Unlimited</strong></p>
+                    </li>
+                </ul>
+                <div class="sandymemberbyubtn">
+                    <a href="#" ><div class="sandybuylink">Start Now</div> </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3 px-3">
+            <div class="sandysingleprice">
+                <div class="sandypricetitle">
+                    <h4>PREMIUM</h4>
+                </div>
+                <div class="sandypricepmon">
+                    <span class="sandyrupee">&#8377;2999</span>
+                    <span class="text-secondary">/Month</span>
+                </div>
+                <ul class="sandymembershipdetails">
+                    <li class="sandymdli">
+                        <p class="text-secondary">Duration</p>
+                        <p><strong>12 months</strong></p>
+                    </li>
+                    <li class="sandymdli">
+                        <p class="text-secondary">Personal trainer</p>
+                        <p><strong>00 person</strong></p>
+                    </li>
+                    <li class="sandymdli">
+                        <p class="text-secondary">Amount of people </p>
+                        <p><strong>01 person</strong></p>
+                    </li>
+                    <li class="sandymdli">
+                        <p class="text-secondary">Number of visits</p>
+                        <p><strong>Unlimited</strong></p>
+                    </li>
+                </ul>
+                <div class="sandymemberbyubtn">
+                    <a href="#" ><div class="sandybuylink">Start Now</div> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sandyclassetion1">
+    <div class="container my-5 " style="background: #fff;"> <!-- get class form by sandy -->
+        <div class="row">
+            <div class="col-md-8 p-5">
+                <div class="w-100 text-center">
+                    <h2 style="font-weight: bold;">REGISTER NOW</h2>
+                    <p style="color: #6b6b6b;">The First 7 Day Trial Is Completely Free With The Teacher</p>
+
+                    <form action="" method="">
+                        <div class=" row">
+                            <div class="col-md-6">
+                                <div class="sdfullrow text-left">
+                                    <p style="color: #afaeae;margin-bottom: 3px;">First Name</p>
+                                    <input type="text" name="" id="" class="input100" required>
+                                </div>
+                                <div class="sdfullrow text-left">
+                                    <p style="color: #afaeae;margin-bottom: 3px;">Last Name</p>
+                                    <input type="text" name="" id="" class="input100">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="sdfullrow text-left">
+                                    <p style="color: #afaeae;margin-bottom: 3px;">Your email address</p>
+                                    <input type="email" name="" id="" class="input100">
+                                </div>
+                                <div class="sdfullrow text-left">
+                                    <p style="color: #afaeae;margin-bottom: 3px;">Mobile No*</p>
+                                    <input type="number" name="" id="" class="input100" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sdfullrow">
+                            <input type="submit" value="SEND MESSAGE" name=""  class="sandysendbtn w-100">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="{% static 'images/register-pic.jpg' %}" style="height: 100%;width: 100%;" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container  my-3 py-5"> <!-- sandy blogs posts show -->
+    <div class="row m-0 p-0 py-3">
+        <div class="sandy_trainer_st col-md-12">
+            <h2>LATEST BLOG</h2>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="sandysinglepost">
+                <div class="sandyblogpostimg">
+                    <img src="{% static 'images/blog-1.jpg' %}" class="img-fluid">
+                </div>
+                <div class="sandyblogwidget">
+                    <span class="text-secondary">February 17, 2019</span>&nbsp;&nbsp;
+                    <span><a href="#" class="sandybloghasg">#Gym</a></span>
+                    <h4 class="mt-2"><a href="#" class="sandyblogpostlink">If you've ever felt out of place in a gym or just in life, this is the blog for you.</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="sandysinglepost">
+                <div class="sandyblogpostimg">
+                    <img src="{% static 'images/blog-2.jpg' %}" class="img-fluid">
+                </div>
+                <div class="sandyblogwidget">
+                    <span class="text-secondary">February 17, 2019</span>&nbsp;&nbsp;
+                    <span><a href="#" class="sandybloghasg">#Born_Fitness</a></span>
+                    <h4 class="mt-2"><a href="#" class="sandyblogpostlink">Born Fitness was developed as a program designed to make taking care of yourself easier and stress-free
+                    </a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="sandysinglepost">
+                <div class="sandyblogpostimg">
+                    <img src="{% static 'images/blog-3.jpg' %}" class="img-fluid">
+                </div>
+                <div class="sandyblogwidget">
+                    <span class="text-secondary">February 17, 2019</span>&nbsp;&nbsp;
+                    <span><a href="#" class="sandybloghasg">#Nerd_Fitness</a></span>
+                    <h4 class="mt-2"><a href="#" class="sandyblogpostlink">Nerd Fitness is a community of "outcasts" and "misfits" ready to help you get into shape.</a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row m-0 p-0"><!-- classes page last section by sandy -->
+    <div class="col-md-6 p-5 sandy_ftr_bnr1">
+        <span>New member</span>
+        <h2>7 days for free</h2>
+        <p>Complete the training sessions with us, surely you will be happy</p>
+        <a href="#" class="sandy_primary-btn">Get Started</a>
+    </div>
+    <div class="col-md-6 p-5 sandy_ftr_bnr2">
+        <span>CONTACT US</span>
+        <h2>09 746 204</h2>
+        <p>If you trust us on your journey they dark sex does not disappoint you!</p>
+        <a href="#" class="sandy_primary-btn">Get Started</a>
+    </div>
+</div>
+
+
+<!-- jquery by sandy-->
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+	  /* $("title").html("Home | BeFit");*/
+   });
+</script>
+{% endblock %}

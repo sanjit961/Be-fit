@@ -1,0 +1,18 @@
+Remaining Work
+
+1. Home page
+	- UNLIMITED CLASSES section
+
+2. About page
+	- BEST GYM AWARD section.
+
+3. Classes page
+	- CLASS TIMETABLE section
+
+4. Blog page
+	- show blog post page
+
+5. Galary page
+	- full page
+
+6. 

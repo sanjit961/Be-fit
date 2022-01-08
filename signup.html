@@ -1,0 +1,65 @@
+{% extends "headerfooter.html" %}
+{% load static %}
+{% block mainblock %}
+<style>
+    *{
+		font-family:poppins;
+		box-sizing:border-box;
+	}
+</style>
+
+<div class="cotainer">
+	<div class="sandyloginpage">
+		<div class="sandyloginsec text-light">
+			<div class="row m-0 p-0">
+				<div class="col-md-6 m-0 p-0 sanddyloginimg">
+					<p class="sandysignuplink">
+						<a href="{% url 'login' %}">Click here to login</a>
+					</p>
+				</div>
+				<div class="col-md-6 m-0 p-0">
+					<h3>Sign Up</h3>
+					<form action="" method="POST">
+                        {% csrf_token %}
+                        <div class="sdfullrow">
+							<input type="text" name="rUsrNm" id="" placeholder="UserName" class="sandyloginput" autocomplete="off" required>
+						</div>
+						<div class="sdfullrow">
+							<input type="email" name="rUserEmail" id="" placeholder="Your email" class="sandyloginput" required>
+                        </div>
+                        <div class="sdfullrow">
+							<input type="text" name="rUserPhone" id="" placeholder="Phone Number" class="sandyloginput">
+						</div>
+						<div class="sdfullrow">
+							<input type="password" name="rUserPass" id="" placeholder="Password" class="sandyloginput" required>
+						</div>
+						<div class="sdfullrow">
+							<button class="btn btn-primary" name="rsumbit"> Sign UP </button>
+						</div>
+						<div class="sdfullrow">
+							<p class="sandysignuplink1">
+								Already have an acoount? <a href="{% url 'login' %}">Login now</a>
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% if status %}
+
+<script type="text/javascript">
+	alert("{{status}}");
+</script>
+
+{% endif %}
+
+<!-- jquery by sandy-->
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+	   $("title").html("Sign Up | BeFit");
+   });
+</script>
+{% endblock %}
